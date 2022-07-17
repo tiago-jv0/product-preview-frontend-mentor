@@ -60,22 +60,14 @@ source {
     max-width: 60rem;
   }
 }
-.card__image--mobile {
+.card__image {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .card__image--mobile {
-    display: none;
-  }
-}
-.card__image--desktop {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-@media screen and (max-width: 600px) {
-  .card__image--desktop {
-    display: none;
+  .card__image {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
 }
 .card__content {

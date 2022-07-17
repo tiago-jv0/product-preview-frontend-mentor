@@ -10,19 +10,11 @@
     }
 
     &__image {
-        &--mobile {
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-            @media screen and (min-width: 600px) {
-                display: none;
-            }
-        }
-        &--desktop {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        @media screen and (min-width: 600px) {
             border-top-left-radius: 1rem;
             border-bottom-left-radius: 1rem;
-            @media screen and (max-width: 600px) {
-                display: none;
-            }
         }
     }
 
