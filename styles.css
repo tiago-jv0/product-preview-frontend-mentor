@@ -129,6 +129,7 @@ source {
   border: none;
   border-radius: 8px;
   background-color: var(--dark-cyan);
+  cursor: pointer;
   padding: 1.5rem 0;
 }
 .card__cta-text {
@@ -137,6 +138,9 @@ source {
   color: var(--white);
   font-size: var(--font-size-normal);
   line-height: 1.8rem;
+}
+.card__cta:hover {
+  background-color: #244c3d;
 }
 
 /*# sourceMappingURL=styles.css.map */

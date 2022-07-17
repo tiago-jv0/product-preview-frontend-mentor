@@ -87,6 +87,8 @@
         border-radius: 8px;
         background-color: var(--dark-cyan);
 
+        cursor: pointer;
+
         padding: 1.5rem 0;
 
         &-text {
@@ -95,6 +97,10 @@
             color: var(--white);
             font-size: var(--font-size-normal);
             line-height: 1.8rem;
+        }
+
+        &:hover {
+            background-color: darken($color: hsl(158, 36%, 37%), $amount: 15);
         }
     }
 }
