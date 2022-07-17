@@ -1,0 +1,12 @@
+{
+  "name": "ProductPreview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compileSass": "sass --watch ./scss/main.scss ./styles.css"
+  },
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

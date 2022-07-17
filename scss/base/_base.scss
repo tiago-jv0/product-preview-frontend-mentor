@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cream);
+    padding: 2.8rem 1.6rem;
+
+    @media screen and(min-width: 600px) {
+        display: grid;
+        place-items: center;
+    }
+}
+
+img,
+source {
+    width: 100%;
+}

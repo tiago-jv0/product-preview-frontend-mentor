@@ -1,0 +1,108 @@
+.card {
+    border-radius: 1rem;
+    background-color: var(--white);
+
+    @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 45rem;
+        max-width: 60rem;
+    }
+
+    &__image {
+        &--mobile {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            @media screen and (min-width: 600px) {
+                display: none;
+            }
+        }
+        &--desktop {
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        padding: 24px 0;
+        max-width: var(--content-width);
+        margin: 0 auto;
+    }
+
+    &__category {
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: var(---font-size-smaller);
+        line-height: 15px;
+        letter-spacing: 5px;
+        color: var(--dark-grayish-blue);
+        margin-bottom: 1.2rem;
+    }
+
+    &__name {
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: var(--font-size-large);
+        line-height: var(--font-size-large);
+        color: var(--very-dark-blue);
+        margin-bottom: 1.6rem;
+    }
+
+    &__description {
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: var(--font-size-normal);
+        line-height: 2.4rem;
+        color: var(--dark-grayish-blue);
+        margin-bottom: 2.4rem;
+    }
+
+    &__prices {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__price {
+        &--current {
+            font-family: var(--secondary-font);
+            font-weight: 700;
+            font-size: var(--font-size-large);
+            line-height: var(--font-size-large);
+            color: var(--dark-cyan);
+        }
+        &--old {
+            font-family: var(--primary-font);
+            font-weight: 500;
+            font-size: var(--font-size-small);
+            text-decoration: line-through;
+            color: var(--dark-grayish-blue);
+        }
+    }
+
+    &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        width: 100%;
+
+        border: none;
+        border-radius: 8px;
+        background-color: var(--dark-cyan);
+
+        padding: 1.5rem 0;
+
+        &-text {
+            font-family: var(--primary-font);
+            font-weight: 700;
+            color: var(--white);
+            font-size: var(--font-size-normal);
+            line-height: 1.8rem;
+        }
+    }
+}
