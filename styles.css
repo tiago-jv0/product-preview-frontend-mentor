@@ -34,15 +34,10 @@ html {
 body {
   height: 100vh;
   background-color: var(--cream);
-  padding: 2.8rem 1.6rem;
-}
-@media screen and (min-width: 600px) {
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img,
@@ -53,6 +48,7 @@ source {
 .card {
   border-radius: 1rem;
   background-color: var(--white);
+  max-width: 34.3rem;
 }
 @media screen and (min-width: 600px) {
   .card {
