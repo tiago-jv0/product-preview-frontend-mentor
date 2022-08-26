@@ -17,8 +17,10 @@ body {
     padding: 2.8rem 1.6rem;
 
     @media screen and(min-width: 600px) {
-        display: grid;
-        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
     }
 }
 
