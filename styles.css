@@ -158,13 +158,15 @@ source {
   background-color: var(--dark-cyan);
   cursor: pointer;
   padding: 1.5rem 0;
-}
-.card__cta-text {
   font-family: var(--primary-font);
   font-weight: 700;
   color: var(--white);
   font-size: var(--font-size-normal);
   line-height: 1.8rem;
+}
+.card__cta-image {
+  width: 1.439rem;
+  height: 1.6rem;
 }
 .card__cta:hover {
   background-color: #244c3d;

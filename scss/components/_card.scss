@@ -2,6 +2,8 @@
     border-radius: 1rem;
     background-color: var(--white);
 
+    max-width: 34.3rem;
+
     @media screen and (min-width: 600px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -66,7 +68,6 @@
         @media screen and (min-width: 600px) {
             margin-bottom: 2.9rem;
         }
-
     }
 
     &__prices {
@@ -112,12 +113,15 @@
 
         padding: 1.5rem 0;
 
-        &-text {
-            font-family: var(--primary-font);
-            font-weight: 700;
-            color: var(--white);
-            font-size: var(--font-size-normal);
-            line-height: 1.8rem;
+        font-family: var(--primary-font);
+        font-weight: 700;
+        color: var(--white);
+        font-size: var(--font-size-normal);
+        line-height: 1.8rem;
+
+        &-image {
+            width: 1.439rem;
+            height: 1.6rem;
         }
 
         &:hover {
